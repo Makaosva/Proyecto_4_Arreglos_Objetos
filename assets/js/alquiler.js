@@ -127,7 +127,7 @@ function mostrarPropAlquilerTotal(propiedadesAlquiler) {
 
 function mostrarPropAlquiler(propiedadesAlquiler) {
   //Instanciamos desde el HTML lista de propiedades en venta
-  console.log("funciona index");
+  
   const listaPropAlquiler = document.getElementById("propAlquiler");
   //listaPropVenta.innerHTML = "";
   let html = "";

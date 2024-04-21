@@ -56,7 +56,7 @@ const propiedadesVentas = [
 //Creamos una funcion para mostrar propiedades Total en venta
 function mostrarPropVentaTotal(propiedadesVentas) {
   //Instanciamos desde el HTML lista de propiedades en venta
-  console.log("funciona");
+
   const listaPropVenta = document.getElementById("propVenta");
   listaPropVenta.innerHTML = "";
   let html = "";
@@ -128,7 +128,7 @@ function mostrarPropVentaTotal(propiedadesVentas) {
 
 function mostrarPropVenta(propiedadesVentas) {
   //Instanciamos desde el HTML lista de propiedades en venta
-  console.log("funciona index");
+
   const listaPropVenta = document.getElementById("propVenta");
   listaPropVenta.innerHTML = "";
   let html = "";
@@ -198,20 +198,6 @@ function mostrarPropVenta(propiedadesVentas) {
   }
 }
 
-const botones = document.querySelectorAll("a");
-for (const boton of botones) {
-  boton.addEventListener("click", () => {
-    if ((boton.className = "venta")) {
-      console.log("primer if");
-      mostrarPropVentaTotal(propiedadesVentas);
-    } else if ((boton.className = "alquiler")) {
-      console.log("segundo if");
-      mostrarPropAlquilerTotal(propiedadesAlquiler);
-    } else {
-      console.log("else");
-    }
-  });
-}
 window.onload = () => {
   mostrarPropVenta(propiedadesVentas);
   mostrarPropAlquiler(propiedadesAlquiler);
